@@ -185,11 +185,6 @@ Red Card CSS Start
 Green Card CSS Start 
 ==========================*/
 
-.card-green {
-  z-index: 999;
-  transform: scale(1.25);
-}
-
 .card-top-green {
   background: linear-gradient(
     0deg,
@@ -247,6 +242,14 @@ Purple Card CSS Start
     rgba(220, 140, 255, 1) 10%,
     rgba(70, 0, 255, 1) 75%
   );
+}
+
+/*==========================
+Hover CSS Start 
+==========================*/
+.card:hover {
+  z-index: 999;
+  transform: scale(1.25);
 }
 
 /*==========================
