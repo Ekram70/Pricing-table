@@ -1,0 +1,263 @@
+/*
+  font-family: "D-DIN-bold";
+  font-family: "D-DIN-regular";
+*/
+
+/*==========================
+Default CSS Here
+==========================*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "D-DIN-regular";
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*==========================
+Common CSS Start 
+==========================*/
+.container {
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 255, 88, 0.25),
+    rgba(1, 157, 255, 0.25)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 32rem;
+  margin: 1rem;
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/*==========================
+Card Top CSS Start 
+==========================*/
+.card-top {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.card-top-heading {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  color: #fff;
+  padding: 8rem 0rem;
+}
+
+.card-top-heading-title {
+  text-transform: uppercase;
+  font-family: "D-DIN-bold";
+  font-size: 4.6rem;
+  margin-bottom: 0.2em;
+}
+
+.card-top-heading-paragraph {
+  font-size: 1.2rem;
+  width: 18rem;
+  margin: 0 auto;
+}
+
+.card-top-pricing {
+  font-size: 8rem;
+  padding: 2rem 0 4rem 0;
+  font-family: "D-DIN-bold";
+}
+
+/*==========================
+Card Bottom CSS Start 
+==========================*/
+.card-bottom {
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+
+.card-bottom-info {
+  display: flex;
+  color: #474747;
+  justify-content: center;
+  align-items: center;
+}
+.card-bottom-info:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.card-bottom-info-check {
+  filter: invert(66%) sepia(60%) saturate(5167%) hue-rotate(78deg)
+    brightness(129%) contrast(117%);
+}
+
+.card-bottom-info-cross {
+  filter: invert(47%) sepia(30%) saturate(5682%) hue-rotate(322deg)
+    brightness(101%) contrast(121%);
+}
+
+.card-bottom-info-heading {
+  margin-left: 1rem;
+}
+
+.card-bottom-button {
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "D-DIN-bold";
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card-bottom-button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.reset:hover {
+  transform: scale(1);
+}
+
+.scaled {
+  z-index: 999;
+  transform: scale(1.25);
+}
+
+/*==========================
+Red Card CSS Start 
+==========================*/
+
+.card-top-red {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 150, 150, 0.25) 20%,
+    rgba(255, 30, 120, 0.25) 70%
+  );
+}
+
+.card-top-heading-red {
+  background: url("images/red-bg.png"),
+    linear-gradient(
+      180deg,
+      rgba(255, 150, 150, 1) 20%,
+      rgba(255, 30, 120, 1) 70%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-top-pricing-red {
+  color: #d64f7a;
+}
+
+.card-bottom-button-red {
+  background: linear-gradient(
+    300deg,
+    rgba(255, 150, 150, 1) 10%,
+    rgba(255, 30, 120, 1) 70%
+  );
+}
+
+/*==========================
+Green Card CSS Start 
+==========================*/
+
+.card-green {
+  z-index: 999;
+  transform: scale(1.25);
+}
+
+.card-top-green {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 155, 255, 0.25) 10%,
+    rgba(50, 255, 90, 0.25) 70%
+  );
+}
+
+.card-top-heading-green {
+  background: url("images/green-bg.png"),
+    linear-gradient(300deg, rgba(0, 155, 255, 1) 10%, rgba(50, 255, 90, 1) 70%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-top-pricing-green {
+  color: #01b8d2;
+}
+
+.card-bottom-button-green {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 155, 255, 1) 40%,
+    rgba(50, 255, 90, 1) 90%
+  );
+}
+
+/*==========================
+Purple Card CSS Start 
+==========================*/
+
+.card-top-purple {
+  background: linear-gradient(
+    180deg,
+    rgba(220, 140, 255, 0.25) 20%,
+    rgba(70, 0, 255, 0.25) 70%
+  );
+}
+
+.card-top-heading-purple {
+  background: url("images/purple-bg.png"),
+    linear-gradient(180deg, rgba(220, 140, 255, 1) 10%, rgba(70, 0, 255, 1) 75%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-top-pricing-purple {
+  color: #8466d5;
+}
+
+.card-bottom-button-purple {
+  background: linear-gradient(
+    300deg,
+    rgba(220, 140, 255, 1) 10%,
+    rgba(70, 0, 255, 1) 75%
+  );
+}
+
+/*==========================
+Responsive CSS Start 
+==========================*/
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+  .card,
+  .card:hover {
+    transform: scale(1);
+  }
+}
